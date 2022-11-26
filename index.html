@@ -110,7 +110,55 @@
             color: teal;
             font-size: 40px;
         }
+        
+        /* pseudo element */
+        .box8::before {
+            content: "The before content";
+            color: red;
+        }
+        .box8::after {
+            content: "The after content";
+            color: blue;
+        }    
+        .box9 {
+            position: absolute;
+            top: 100px;
+            left: 10%;
+        }
+        .box10 {
+            margin-top: 20px;
+            padding: 30px;
+            height: 700px;
+            border: 2px solid black;
+            position: relative;
+        }
+        .box11, 
+        .box12 {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .box12 {
+            background-color: yellow;
+            width: 300px;
+            height: 25px;
+            z-index: -1;
+            opacity: 0.5;
+        }
+        .box10::before {
+            background-image: url(https://scontent.fmnl25-1.fna.fbcdn.net/v/t1.6435-9/58019436_2765440626830775_469182012666675200_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=Yx56xZWpofYAX8VESw3&_nc_ht=scontent.fmnl25-1.fna&oh=00_AfCU6zO1gMqCkWZ5wlsNnimZny4sQDo0GtGwPe44Altc1A&oe=639D0B53);
             
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+        }
     </style>
 </head>
 <body>
@@ -149,5 +197,20 @@
         <li>4th Child</li>
         <li>5th Child</li>
     </ul>
+
+    <div class="box8">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, deleniti?
+    </div>
+
+    <div class="box9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quis?
+    </div>
+    <div class="box10">
+        <div class="box11">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, impedit.
+        </div>
+        <div class="box12">
+
+        </div>
+    </div>
 </body>
 </html>
