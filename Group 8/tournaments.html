@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <link rel="stylesheet" href="./tournaments.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="./website.html" class="logo">Game<span> Hub</span></a>
+        <ul class="nav">
+            <li> <a href="./website.html">Home</a> </li>
+            <li> <a href="./about.html">About Us</a> </li>
+            <li> <a href="./games.html">Games</a> </li>
+            <li> <a href="./Tournament.html" class="active">Tournaments</a> </li>
+            <li> <a href="./contact.html">Contact Us</a> </li>
+            <li> <a href="./login.html" id="loginBtn">Login</a> </li>
+        </ul>
+        <div class="action">
+            <div class="searchBox">
+                <a href="#"><i class='bx bx-search' ></i></a>
+                <input type="text" placeholder="Search Games">
+            </div>
+        </div>
+        <a href="#" class="register" onclick="logout()">Logout</a><!--Sample only-->
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+
+    <div class="tournaments animeX" id="tournaments active">
+        <h2>Live Tournaments</h2>
+    </div>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openConsole(event, 'Computer')">Computer</button>
+        <button class="tablinks" onclick="openConsole(event, 'Mobile')">Mobile</button>
+      </div>
+
+      <div id="Computer" class="tabcontent animeX">
+        <div class="lol animeX mt-5 ">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/League_of_Legends_2019_vector.svg/1200px-League_of_Legends_2019_vector.svg.png"
+                class="lul">
+
+            <div class="container animeX my-3">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+
+                    <div class="col mt-3">
+
+                        <div class="card bg-black">
+                            <img src="https://www.lionheartv.net/wp-content/uploads/2021/06/The-Best-of-SEA-gear-up-for-legendary-finish-to-Wild-Rift-Icon-Series-%E2%80%93-Summer-Super-Cup-Philippine-Pro-Gaming-League-announced-as-official-presenter-1.jpg"
+                                class="card-img-top"
+                                alt="https://www.lionheartv.net/wp-content/uploads/2021/06/The-Best-of-SEA-gear-up-for-legendary-finish-to-Wild-Rift-Icon-Series-%E2%80%93-Summer-Super-Cup-Philippine-Pro-Gaming-League-announced-as-official-presenter-1.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title"><span class="hl">Live•</span>SEA Icon Series</h5>
+                                <br><p class="card-text">The Southeast Asia (SEA) Icon Series, organized by Riot Games, is set to conclude with its first regional championship of the year the Summer Super Cup. Throughout the tournament circuit, teams have been competing in League of Legends: Wild Rift, the mobile version of the popular game that has recorded over 2.3 million downloads in the country, and over 12 million downloads across the entire SEA and Hong Kong.</p>
+                                <div class="btn">
+                                    <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col mt-3">
+
+                        <div class="card bg-black">
+                            <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/289534238_729963041672393_7144207462002177874_n.png?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHw5Qh_UCV7ztolrRvyhScyfXGKAbBaqp99cYoBsFqqn03Ycj2ICIT1GdW6kz_z-Ky4VvSYnbnJidDxvXoV2acF&_nc_ohc=NmStgmv77u0AX9Zfd6a&_nc_ht=scontent.fmnl17-5.fna&oh=00_AfBKvpqCn1zayNSJRutOlus5j5mCXlbrgmBbSXZzrdmrAg&oe=6391C19F">
+                            <div class="card-body">
+                                <h5 class="card-title"><span class="hl">Live•</span>RDAG Qualifier</h5>
+                                <br><p class="card-text">We're looking for the best League of Legends teams in the country to join the RDAG PH Qualifier Tournament!
+                                    <br>The best of the best in this tournament will have a chance to represent the country at RDAG 2022!
+                                    <br>If you think this is you REGISTER NOW!
+                                    <br><br>
+                                    #MulingLumakadMatatag
+                                    <br>#SibolpoweredbySmart 
+                                    </p>
+                                <div class="btn">
+                                    <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col mt-3">
+
+                        <div class="card bg-black">
+                            <img src="https://s.yimg.com/ny/api/res/1.2/haylCT6zASq896aD2bb9PQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MA--/https://s.yimg.com/os/creatr-uploaded-images/2022-05/78d8db50-cb9b-11ec-a333-011ac46406d5"
+                                alt="https://s.yimg.com/ny/api/res/1.2/haylCT6zASq896aD2bb9PQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MA--/https://s.yimg.com/os/creatr-uploaded-images/2022-05/78d8db50-cb9b-11ec-a333-011ac46406d5">
+                            <div class="card-body">
+                                <h5 class="card-title"><span class="hl">Live•</span>MSI 2022</h5>
+                                <br><p class="card-text">The League of Legends (LoL) Mid-Season Invitational (MSI) 2022 is almost upon us, and we’re sure you’re excited to see your favourite teams clash head-to-head in a bid for the year's first international LoL title.
+                                    <br><br>
+                                    The MSI is an annual global tournament that gathers some of the world’s best teams and is the second-most prestigious international LoL tournament (behind Worlds, of course).</p>
+                                <div class="btn">
+                                    <a href="" class="watch">Watch</a><a href="" class="join">Join Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="dota animeX mt-5">
+            <img src="https://static.wikia.nocookie.net/dota2_gamepedia/images/5/52/Dota_2.png/revision/latest?cb=20180503180512"
+                class="dota2">
+
+            <div class="container animeX my-3">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+
+                    <div class="col mt-3">
+
+                        <div class="card bg-black">
+                            <img src="http://www.whatshappening.com.ph/uploads/2017/12/29/1514519917.jpg"
+                                class="card-img-top"
+                                alt="http://www.whatshappening.com.ph/uploads/2017/12/29/1514519917.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title"><span class="hl">Live•</span>Galaxy Battles</h5>
+                                <br><p class="card-text">Organizers started to recognize the passion of Southeast Asian gamers for the game. Hence, the eSports tournament organizers Fallout Gaming (FG) and Purpose Win (PWEL) have announced that the next Galaxy Battles will be held in the Philippines on January 19-21, 2018 at the Philippine Arena, Bulacan.
+                                    <br>
+                                    With sights set on bringing the tournament home to South East Asia, both organizers have a vision to reinvent the DotA 2 eSports competitive scene through the delivery of the tournament, the tournament itself, and explorations into experiential consumer engagements.</p>
+                                <div class="btn">
+                                    <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col mt-3">
+
+                        <div class="card bg-black">
+                            <img src="https://www.lionheartv.net/wp-content/uploads/2020/04/fildota2scene2xworldchamp.jpg"
+                                class="card-img-top"
+                                alt="https://www.lionheartv.net/wp-content/uploads/2020/04/fildota2scene2xworldchamp.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title"><span class="hl">Live•</span>River Runes</h5>
+                                <br><p class="card-text">Red Bull River Runes makes a second consecutive trip to the Philippines! In a 1v1 Dota 2 match, players from Luzon, Visayas, and Mindanao will face off.
+                                    <br>A custom map created for the Dota 2 game is called Red Bull River Runes. Players participating in the competition will face off in a quick-thinking, 1v1 mirror matchup that favors intuition. Getting three kills or getting the first kill on an opponent T1 Tower is required for a player to advance in the tournament.
+                                    Red Bull River Runes is open to all players ages 18 and above, with their own Steam and Discord accounts.
+                                </p>
+                                <div class="btn">
+                                    <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col mt-3">
+
+                        <div class="card bg-black">
+                            <img src="https://www.lionheartv.net/wp-content/uploads/2021/06/Youth-Esports-Program-to-award-the-first-National-Interschool-Cyber-League-Champions-this-June-3-728x728.jpg"
+                                class="card-img-top"
+                                alt="https://www.lionheartv.net/wp-content/uploads/2021/06/Youth-Esports-Program-to-award-the-first-National-Interschool-Cyber-League-Champions-this-June-3-728x728.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title"><span class="hl">Live•</span>NICL (YEP/PCCL)</h5>
+                                <br><p class="card-text">Showcasing game developer Valve’s multiplayer online battle arena (MOBA) PC game DOTA 2 this time, the next leg of NICL regional qualifiers is open to teams consisting of senior high school and college students aged 16-22.
+                                    <br><br>
+                                    NICL is the banner program under Mineski Philippines’ Youth Esports Program (YEP), formed in partnership with the Philippine Collegiate Champions League (PCCL)  to support the grassroots development of esports amongst Filipino students and promote responsible gaming.</p>
+                                <div class="btn">
+                                    <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="val animeX mt-5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valorant_logo_-_pink_color_version.svg/2560px-Valorant_logo_-_pink_color_version.svg.png" class="valo">
+ 
+            <div class="container animeX my-3">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+
+                    <div class="col mt-3">
+
+                        <div class="card bg-black">
+                            <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.6435-9/105987879_10151533603669984_7501404016335817190_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeE298CNzMYIx3KY1WOU9I7YFwIDNSQIYAoXAgM1JAhgCvhWHDelvfgBV2ANcEUvrwqLPGM-QEcIWN8o-bcufvWU&_nc_ohc=1dggIj-rnIsAX8lWU-p&_nc_ht=scontent.fmnl17-3.fna&oh=00_AfDea_8LWtKfsdhhtpC--DfUuL1xj_L9nvVV5X7fRD_PoA&oe=63AE1379"
+                                class="card-img-top"
+                                alt="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.6435-9/105987879_10151533603669984_7501404016335817190_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeE298CNzMYIx3KY1WOU9I7YFwIDNSQIYAoXAgM1JAhgCvhWHDelvfgBV2ANcEUvrwqLPGM-QEcIWN8o-bcufvWU&_nc_ohc=1dggIj-rnIsAX8lWU-p&_nc_ht=scontent.fmnl17-3.fna&oh=00_AfDea_8LWtKfsdhhtpC--DfUuL1xj_L9nvVV5X7fRD_PoA&oe=63AE1379">
+                            <div class="card-body">
+                                <h5 class="card-title"><span class="hl">Live•</span>Pacific Qualifier</h5>
+                                <br><p class="card-text">The first VALORANT Ignition Series event in Southeast Asia《VALORANT Pacific Open》<br><br>
+                                    The qualifiers for《VALORANT Pacific Open》, Southeast Asia's entry in the VALORANT Ignition Series, is now open for registration! Teams from Taiwan, Thailand, Hong Kong, Philippines, Indonesia, Malaysia, and Singapore, come and join us now!
+10 teams will emerge from the Regional Open Qualifiers and be joined by six invited teams at the Finals to battle it out for remaining prize pool of US$20,000.
+                                </p>
+                                <div class="btn">
+                                    <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col mt-3">
+
+                        <div class="card bg-black">
+                            <img src="https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/298247583_7857129591026087_1192756159680169086_n.jpg?stp=cp0_dst-jpg_e15_fr_q65&_nc_cat=101&ccb=1-7&_nc_sid=110474&efg=eyJpIjoidCJ9&_nc_eui2=AeENvZln0ZMG4MyL-gwKGvRv5HLXqPHQ4M3kcteo8dDgzXURB4meVPe0n0tBVdzWHfYO_1N-dmVNGHhND47aF497&_nc_ohc=Q5CN7w6cv2AAX8IaRvW&_nc_ht=scontent.fmnl17-1.fna&oh=00_AfAoyH5Q87YZSgINnRfbupakdhai69V0z4MyhPp2kyleAg&oe=638C871E"
+                                class="card-img-top"
+                                alt="https://scontent.fmnl17-1.fna.fbcdn.net/v/t39.30808-6/298247583_7857129591026087_1192756159680169086_n.jpg?stp=cp0_dst-jpg_e15_fr_q65&_nc_cat=101&ccb=1-7&_nc_sid=110474&efg=eyJpIjoidCJ9&_nc_eui2=AeENvZln0ZMG4MyL-gwKGvRv5HLXqPHQ4M3kcteo8dDgzXURB4meVPe0n0tBVdzWHfYO_1N-dmVNGHhND47aF497&_nc_ohc=Q5CN7w6cv2AAX8IaRvW&_nc_ht=scontent.fmnl17-1.fna&oh=00_AfAoyH5Q87YZSgINnRfbupakdhai69V0z4MyhPp2kyleAg&oe=638C871E">
+                            <div class="card-body">
+                                <h5 class="card-title"><span class="hl">Live•</span>EMCOR x Lenovo</h5>
+                                <br><p class="card-text">Watch out for EMCOR x Lenovo Kadayawan Valorant Tournament. 👾
+                                    <br><br>
+                                    Pre registration starts on August 15 until August 21. 🗓
+                                    <br><br>
+                                    BIG CASH PRIZES await you. Stay tuned for more details. 🏆
+                                    <br><br><br><br><br><br>
+                                </p>
+                                <div class="btn">
+                                    <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col mt-3">
+
+                        <div class="card bg-black">
+                            <img src="https://pbs.twimg.com/media/FIJyuSeUYAAEF7N.jpg"
+                                class="card-img-top"
+                                alt="https://pbs.twimg.com/media/FIJyuSeUYAAEF7N.jpg">
+                            <div class="card-body">
+                                <h5 class="card-title"><span class="hl">Live•</span>AXE Gensis</h5>
+                                <br><p class="card-text">Lock and Load. This is how we start 2022.
+                                    <br><br>
+                                    Axe Philippines & Ardent Gaming PH, together with Valorant PH, presents the AXE Genesis Valorant Tournament!
+                                    <br><br>
+                                    12 invited pro teams
+                                    4 qualified teams (open qualifiers)
+                                    Php 100,000 prizepool
+                                    <br><br>
+                                    #AXEGenesis
+                                    #ValorantPH
+                                    #ArdentGamingPH
+                                    #AXEPhilippines
+                                    #RiotSEACommunities
+                                    <br><br><br>
+                                </p>
+                                <div class="btn">
+                                    <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+</div>
+
+<div id="Mobile" class="tabcontent animeX">
+
+    <div class="lolw animeX mt-5">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/League_of_Legends_Wild_Rift_logo.png"
+            class="lulw">
+ 
+        <div class="container animeX my-3">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+
+                <div class="col mt-3">
+
+                    <div class="card bg-black">
+                        <img src="https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F93479-05704fd31d202c98924b79ed9244afa1.jpg?format=auto"
+                            class="cardw"
+                            alt="https://gumlet.assettype.com/afkgaming%2Fimport%2Fmedia%2Fimages%2F93479-05704fd31d202c98924b79ed9244afa1.jpg?format=auto">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="hl">Live•</span>Pentaboom(SEA)</h5>
+                            <br><p class="card-text">Wild Rift SEA Pentaboom Showdown is the SEA Charity tournament including Cambodia, Indonesia, the Philippines, Malaysia, Myanmar, Singapore, Thailand and Vietnam. Riot Games Southeast Asia will donate US$60,000 to Room to Read (Cambodia, Indonesia, Myanmar, Vietnam), Openminds Project (Thailand), Beyond Social Services (Singapore), Passerelles Numeriques (the Philippines, Cambodia, Vietnam) and Wing Melaka (Malaysia).</p>
+                            <div class="btn">
+                                <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col mt-3">
+
+                    <div class="card bg-black">
+                        <img src="https://cdn.oneesports.gg/cdn-data/2021/09/WildRift_SEAChampionship_2021_SBTC_EVOS_Secret-450x253.jpg"
+                            class="cardw"
+                            alt="https://cdn.oneesports.gg/cdn-data/2021/09/WildRift_SEAChampionship_2021_SBTC_EVOS_Secret-450x253.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="hl">Live•</span>Icon Series</h5>
+                            <br><p class="card-text">The 2021 Icon Series has concluded its Fall Season all across Southeast Asia, and we now know every team competing at the Wild Rift SEA Championship 2021. 
+
+                                Nine regions will be participating in the Wild Rift SEA Championship 2021, namely Thailand, Malaysia, the Philippines, Taiwan, Hong Kong, Vietnam, Singapore, Indonesia, and Oceania. 
+                                
+                                Teams in Pool 1 will start their journey in the Group Stage, while those in Pool 2 will begin in the Play-ins Stage.
+                                </p>
+                            <div class="btn">
+                                <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col mt-3">
+
+                    <div class="card bg-black">
+                        <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.6435-9/153280122_359533321949520_5887555506493550069_n.png?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGeozEY2OyytDFEFNbJPolBkEK0V2JZZKOQQrRXYllko9f5U57IRIL0Cmk9i_XSXCi381hfx9y3cloBuZoIVOrV&_nc_ohc=ylWJjO9MgM8AX82gIKr&_nc_ht=scontent.fmnl17-3.fna&oh=00_AfAODaavgDf5_sM7As0HFsTeAj8NO7gLZeJPyTmVSDp5Ug&oe=63AFF210"
+                            class="cardw"
+                            alt="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.6435-9/153280122_359533321949520_5887555506493550069_n.png?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeGeozEY2OyytDFEFNbJPolBkEK0V2JZZKOQQrRXYllko9f5U57IRIL0Cmk9i_XSXCi381hfx9y3cloBuZoIVOrV&_nc_ohc=ylWJjO9MgM8AX82gIKr&_nc_ht=scontent.fmnl17-3.fna&oh=00_AfAODaavgDf5_sM7As0HFsTeAj8NO7gLZeJPyTmVSDp5Ug&oe=63AFF210">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="hl">Live•</span>FRONTIER</h5>
+                            <br><p class="card-text">We are back with another Wild Rift tournament, but this time, it's exclusive to the Philippines!
+                                'The Wild Rift Contender Series - Asia' [Sponsored by Trovo, in collaboration with Frontier League, Graphics by Rippin]
+                                You will see 8 teams from the Philippines battling it out in a Single Elimination Format for a total Prize Pool of $750 // 36,500 PHP over the course of 2 days from 24th - 25th !
+                                Stay tuned for an announcement regarding the participating teams!.</p>
+                            <div class="btn">
+                                <a href="" class="watch">Watch</a><a href="" class="join">Join Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="ml animeX mt-5">
+        <img src="https://www.freepnglogos.com/uploads/logo-mobile-legend-png/logo-mobile-legend-tcash-apapun-operatornya-semua-bisa-paketcash-18.png"
+            class="mlg">
+
+        <div class="container animeX my-3">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+
+                <div class="col mt-3">
+
+                    <div class="card bg-black">
+                        <img src="https://newbrighton.edu.ph/wp-content/uploads/2021/03/ML-Tournament.jpg"
+                            class="cardml2"
+                            alt="https://newbrighton.edu.ph/wp-content/uploads/2021/03/ML-Tournament.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="hl">Live•</span>Brighton</h5>
+                            <br><p class="card-text">Join the first Mobile Legends Tournament in our first ever Inter-school contest of New Brighton. <br>
+                                Here are the mechanics on how to join: <br>
+                                
+                                Registration and Participation: <br>
+                                1. All players must be 14-20 years old. <br>
+                                2. Players must register as one team. <br>
+                                3. Participants from other schools are welcome to join. <br>
+                                4. Each team should have group names that are not offensive or vulgar. <br>
+                                5. Players are responsible for their devices and internet connection (Mobile Data or Wi-Fi).
+                                
+                            <div class="btn">
+                                <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col mt-3">
+
+                    <div class="card bg-black">
+                        <img src="https://www.cmu.edu.ph/wp-content/uploads/2019/11/ml-1.jpg"
+                            class="cardml2"
+                            alt="https://www.cmu.edu.ph/wp-content/uploads/2019/11/ml-1.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="hl">Live•</span>CMU</h5>
+                            <br><p class="card-text">Join the first Mobile Legends Tournament in our 2019 Palaro contest of Mobile Legends. <br>
+                                Here are the mechanics on how to join: <br><br>
+                                
+                                Registration and Participation: <br>
+                                1. All players must be 16-20 years old. <br>
+                                2. Players must register as one team. <br>
+                                3. Participants from other schools are welcome to join. <br>
+                                4. Each team should have group names that are not offensive or vulgar. <br>
+                                5. Players are responsible for their devices and internet connection (Mobile Data or Wi-Fi).
+                            </p>
+                            <div class="btn">
+                                <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col mt-3">
+
+                    <div class="card bg-black">
+                        <img src="https://bandwagon-gig-finder.s3.amazonaws.com/editorials/uploads/pictures/22451/content_mobile-legends-battle-of-the-bands-2020-covid-19-lockdown-metro-manila.jpg"
+                            class="cardml2"
+                            alt="https://bandwagon-gig-finder.s3.amazonaws.com/editorials/uploads/pictures/22451/content_mobile-legends-battle-of-the-bands-2020-covid-19-lockdown-metro-manila.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="hl">Live•</span>PACHAKK</h5>
+                            <br><p class="card-text">Razer Gold x Final Round Promotions x Project 4 Productions
+                                presents 
+                                Battle of the Bands - MLBB Edition <br><br>
+                                Pakchakk Tournament <br><br>
+                                We already have 16 teams ready to compete! <br><br>
+                                Each team is represented by known bands here in PH! <br><br>
+                                Share and support!
+                                <br>#PakchakkTournament
+                                <br>#RazerGold
+                                #Project4Productions</p>
+                            <div class="btn">
+                                <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="cod mt-5 animeX">
+        <img src="https://www.pngarts.com/files/8/Call-of-Duty-Mobile-Logo-PNG-Image.png" 
+        class="codm">
+
+        <div class="container my-3 animeX">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+
+                <div class="col mt-3">
+
+                    <div class="card bg-black">
+                        <img src="https://www.ungeek.ph/wp-content/uploads/2019/11/CI_PH.jpg"
+                            class="card-img-top"
+                            alt="https://www.ungeek.ph/wp-content/uploads/2019/11/CI_PH.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="hl">Live•</span>Clan Invasion</h5>
+                            <br><p class="card-text">CLAN INVASION: The inaugural OFFICIAL CODM Tournament is here! <br>
+                                Think you have what it takes to be the nation's best? <br> Build your squad and register now!
+                                Participation is limited to citizens & permanent residents of each country. <br> Example: Citizens & permanent residents of Philippines are only allowed to join Clan Invasion PH.
+                                <br>#CODMmUnity #TogetherWeFight #Callofdutymobile #Tournament #Official #PH
+                            </p>
+                            <div class="btn">
+                                <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col mt-3">
+
+                    <div class="card bg-black">
+                        <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.6435-9/94038617_2524946477611183_8059253737190850560_n.jpg?stp=dst-jpg_p526x296&_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFHDiU0yHX-fnTYptHOKYAgizoNcJgv1TiLOg1wmC_VOOyR4vqqEgnjqKhdaCVjQZDotR1nPzaDipPvRki8PorC&_nc_ohc=8r9zp5_iPhcAX_8TQ7z&_nc_ht=scontent.fmnl17-2.fna&oh=00_AfC2QAadK6cuXOuf4k_tiz4XQn48Wn_DabHl9On0VGcM0Q&oe=63AFDC47"
+                            class="card-img-top"
+                            alt="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.6435-9/94038617_2524946477611183_8059253737190850560_n.jpg?stp=dst-jpg_p526x296&_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFHDiU0yHX-fnTYptHOKYAgizoNcJgv1TiLOg1wmC_VOOyR4vqqEgnjqKhdaCVjQZDotR1nPzaDipPvRki8PorC&_nc_ohc=8r9zp5_iPhcAX_8TQ7z&_nc_ht=scontent.fmnl17-2.fna&oh=00_AfC2QAadK6cuXOuf4k_tiz4XQn48Wn_DabHl9On0VGcM0Q&oe=63AFDC47">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="hl">Live•</span>The Plunge</h5>
+                            <br><p class="card-text">Welcome to The Plunge! Our first Battle Royale tournament. Gather a squad of 4 players, aboard the aircraft, drop at Isolated and fight to be the last team standing! <br><br>
+
+                                Tournament slots are up to a maximum of 100 teams and each team will be divided into 5 groups. Each group plays 3 matches on a designated day from 21-25 April. Top 4 teams from each group advance to the Final Round on 26 April <br>
+                                Tournament is open to all players in Philippines.
+                            </p>
+                            <div class="btn">
+                                <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col mt-3">
+
+                    <div class="card bg-black">
+                        <img src="https://www.fightesports.com/wp-content/uploads/2020/10/VCODM.jpg"
+                            class="card-img-top"
+                            alt="https://www.fightesports.com/wp-content/uploads/2020/10/VCODM.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title"><span class="hl">Live•</span>Fight Harder</h5>
+                            <br><p class="card-text">Calling all PH FIGHTERS!
+                                <br><br>
+                                Guess what? Wallet Codes and us, FIGHT Esports are having the Call of Duty: Mobile Online Tournament, FIGHT: HARDER this weekend for the first time!
+                                <br><br>
+                                Winners will win a sum of PHP 10,000!
+                                <br><br>
+                                So what are you waiting for? Get your loadouts ready and FIGHT until the very end!
+                                <br><br><br>
+                            </p>
+                            <div class="btn">
+                                <a href="#" class="watch">Watch</a><a href="#" class="join">Join Now</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script>
+    // Sticky NavBar
+    window.addEventListener('scroll',function() {
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky',window.scrollY > 0);
+    });
+
+    // NavBar
+    function toggleMenu(){
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const nav = document.querySelector('.nav');
+        toggleMenu.classList.toggle('active')
+        nav.classList.toggle('active')
+    }
+
+    // Scrolling Effect
+    window.addEventListener('load',function(){
+        var anime = document.querySelectorAll('.animeX');
+
+        for(var s = 0; s < anime.length; s++){
+            var windowheight = window.innerHeight;
+            var animetop = anime[s].getBoundingClientRect().top;
+            var animepoint = 150;
+
+            if(animetop < windowheight - animepoint){
+                anime[s].classList.add('active');
+            }
+            else{
+                anime[s].classList.remove('active');
+            }
+        }
+    })
+
+
+    // Cards
+    let list = document.querySelectorAll('.list');
+    let card = document.querySelectorAll('.card');
+
+    for(let i = 0; i<list.length; i++){
+        list[i].addEventListener('click',function(){
+            for(let j=0; j<list.length; j++){
+                list[j].classList.remove('active');
+            }
+            this.classList.add('active');
+            let dataFilter = this.getAttribute('data-filter');
+            for( let k=0; k<card.length; k++)
+            {
+                card[k].classList.remove('active');
+                card[k].classList.add('hide');
+                
+                if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+                    card[k].classList.remove('hide');
+                    card[k].classList.add('active');
+                }
+           }
+        })
+    }
+
+
+    const loginBtn = document.querySelector('#loginBtn');
+        let storage = localStorage.getItem('regActive');
+        
+        if(!storage){
+            document.querySelector('.register').classList.add('regactive');
+            document.querySelector('#loginBtn').classList.remove('regactive');
+        }else{
+            loginBtn.classList.add('regactive');
+        }
+
+        function logout(){
+            window.location = './index.html'
+            localStorage.clear();
+        }
+
+</script>
+    <!-- <script src="./Tournament.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
