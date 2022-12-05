@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/736x/4b/fc/d5/4bfcd5062f27682f689382d6a43a7844.jpg);
+    height: 100vh;
+    position: relative;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 6px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1000;
+    
+}
+header.sticky {
+    background: black;
+
+}
+
+header .logo {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    border: none;
+    text-shadow: 0 0 10px red;
+}
+
+header .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .active {
+    color: white;
+    background-color: red;
+}
+
+header ul li {
+    list-style: none;
+    margin: 10px; 
+    border-radius: 10px;
+    
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+header ul li a:hover {
+    background:brown;
+    color: white;
+}
+
+header .action .searchBox {
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+}
+
+header .action .searchBox i {
+    font-size: 1.4rem;
+    margin: 5px;
+    color: black;
+}
+
+header .action .searchBox input {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: black;
+}
+
+header .register {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+header .register:hover {
+    background: brown;
+    border: 1px solid white;
+    color: white;
+    transform: scale(.95);
+    transition: .2s ease;
+}
+
+/* Home Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.banner .bg {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg .content {
+    width: 50%;
+    height: 100%;
+}
+
+.banner .bg .content h2 {
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 0 0 10px red;
+}
+
+.banner .bg .content p {
+    font-size: 1rem;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a:hover {
+    background: brown;
+    border: none;
+    color: white;
+}
+
+.banner .bg img {
+    width: 600px;
+}
+
+.regactive{
+    display: none !important;
+}
+
+/* Registration */
+.registration {
+    padding: 20px 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.registration img {
+    height: 100%;
+    width: 50%;
+    object-fit: contain;
+    border-radius: 10px;    
+}
+
+.registration .form {
+    width: 50%;
+    margin: 30px;
+
+}
+
+.registration .form h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 3em;
+    text-shadow: 0 0 10px red;
+}
+
+.registration .form .inputBox {
+    margin: 10px 0;
+}
+
+.registration .form .inputBox p {
+    color: red;
+    font-weight: 700;
+}
+
+.registration .form .inputBox input,
+.registration .form .inputBox textarea {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 60%;
+    color: black;
+    background: white;
+    min-height: 15px;
+    font-size: 1.1rem;
+}
+
+.registration .form .inputBox textarea {
+    height: 150px;
+}
+
+.registration .form .inputBox input[type="submit"] {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    outline: none;
+    background: transparent;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.registration .form .inputBox input[type="submit"]:hover {
+    background: brown;
+    border: none;
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 0 100px;
+    margin-top: -10vh;
+
+}
+
+footer .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .info .logo {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px red;
+}
+
+footer .info p{
+    color: white;
+}
+
+footer .info ul {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .info ul li {
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1aeeef;
+}
+
+footer .info ul li:hover {
+    background: #f52323f1;
+    border: none;
+    color: black;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+footer .info ul li a i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer .info ul li:hover a i {
+    color: black;
+ }
+ .animeX{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 2s ease;
+ }
+ .animeX.active{
+    transform: translateY(0px);
+    opacity: 1;
+ }
+
+ /* Responsiveness */
+ @media screen and (max-width: 900px) {
+    header {
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+    header .nav {
+        flex-wrap: wrap;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        display: none;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+    header .nav.active {
+        display: flex;
+    }
+    header .nav li {
+        margin: 20px 0;
+    }
+    header .nav li a {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .toggleMenu {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(https://www.pinclipart.com/picdir/big/532-5328945_menu-bar-icon-white-clipart-png-download-menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        z-index: 1001;
+    }
+    .toggleMenu.active {
+        background: url(https://freevector.co/wp-content/uploads/2012/12/80011-cancel-sign.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background: red;
+        border-radius: 50px;
+    }
+    .banner .bg img {
+        position: absolute;
+        width: 100%;
+    }
+    .banner .bg .content {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        background: rgb(27 33 65 / 50%);
+        padding: 20px;
+        z-index: 1000;
+        border-radius: 10px;
+    }
+    .about{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .about .contentBox{
+        width: 100%;
+    }
+    .contact{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .contact img{
+        height: 100%;
+        width: 100%;
+    }
+    .contact .form{
+        width: 100%;
+        margin: 30px;
+        padding: 10px;
+    }
+    .contact .form h1{
+        text-align: center;
+        
+    }
+    .tournaments {
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    .games {
+        flex-wrap: wrap;
+        height: 100%;
+        width: 100%;
+    }
+    footer .info{
+        flex-direction: column;
+    }
+ }

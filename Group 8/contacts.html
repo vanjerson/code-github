@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./contacts.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header>
+        <a href="./website.html" class="logo">Game<span>Hub</span></a>
+        <ul class="nav">
+            <li> <a href="./website.html">Home</a> </li>
+            <li> <a href="./about.html">About Us</a> </li>
+            <li> <a href="./games.html">Games</a> </li>
+            <li> <a href="./Tournament.html">Tournaments</a> </li>
+            <li> <a href="./contact.html"  class="active">Contact Us</a> </li>
+            <li> <a href="./login.html" id="loginBtn">Login</a> </li>
+        </ul>
+        <div class="action">
+            <div class="searchBox">
+                <a href="#"><i class='bx bx-search' ></i></a>
+                <input type="text" placeholder="Search Games">
+            </div>
+        </div>
+        <a href="#" class="register" onclick="logout()">Logout</a><!--Sample only-->
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+
+
+        <!-- Contact Us -->
+        <!-- replaced some p elements to label -->
+        <!-- added form tag -->
+        <!-- added selectors in css:
+            .contact.contactPage
+            .contact.contactPage img
+            .contact.contactPage .form -->
+    <div class="container">
+        <div class="row contact animeX contactPage" id="contact">
+            <div class="col-12 col-lg-5 col-md-6">
+                <img src="https://www.pay-trade.co.uk/wp-content/themes/paytrade/images/contact.png" alt="">
+            </div>
+            <div class="col-12 col-lg-5 col-md-8">
+                <form class="form m-3">
+                    <h1 class="text-center">Contact Details</h1>
+                    <br>
+                    <p>Email Address: <a href="#" style="text-decoration: none; color: white;">GameHub@admin.com</a></p>
+                    <p>Tel #: <span style="color: white">(032) 268-7237</span></p>
+                    <p>Social Media: <a href="#" style="text-decoration: none; color: white;">www.facebook.com/GameHub</a></p>
+                    <div class="inputBox">
+                        <label for="messaage">You can also send a direct message here:</label>
+                        <textarea name="message" id="message" placeholder="Type here..."></textarea>
+                    </div>
+                    <div class="inputBox text-center">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="info">
+            <a href="#" class="logo">Game<span> Hub</span></a>
+            <p><i class='bx bx-copyright' ></i> WD30 Group-8 All Rights Reserved</p>
+            <ul>
+                <li><a href="#"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-youtube' ></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- Javascript section -->
+    <script>
+        // Sticky NavBar
+        window.addEventListener('load',function() {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+
+        // NavBar
+        function toggleMenu(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+
+        // Scrolling Effect
+        window.addEventListener('load',function(){
+            var anime = document.querySelectorAll('.animeX');
+
+            for(var s = 0; s < anime.length; s++){
+                var windowheight = window.innerHeight;
+                var animetop = anime[s].getBoundingClientRect().top;
+                var animepoint = 150;
+
+                if(animetop < windowheight - animepoint){
+                    anime[s].classList.add('active');
+                }
+                else{
+                    anime[s].classList.remove('active');
+                }
+            }
+        })
+
+
+        // Cards
+        // let list = document.querySelectorAll('.list');
+        // let card = document.querySelectorAll('.card');
+
+        // for(let i = 0; i<list.length; i++){
+        //     list[i].addEventListener('click',function(){
+        //         for(let j=0; j<list.length; j++){
+        //             list[j].classList.remove('active');
+        //         }
+        //         this.classList.add('active');
+        //         let dataFilter = this.getAttribute('data-filter');
+        //         for( let k=0; k<card.length; k++)
+        //         {
+        //             card[k].classList.remove('active');
+        //             card[k].classList.add('hide');
+                    
+        //             if(card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+        //                 card[k].classList.remove('hide');
+        //                 card[k].classList.add('active');
+        //             }
+        //        }
+        //     })
+        // }
+
+
+        const loginBtn = document.querySelector('#loginBtn');
+        let storage = localStorage.getItem('regActive');
+        
+        if(!storage){
+            document.querySelector('.register').classList.add('regactive');
+            document.querySelector('#loginBtn').classList.remove('regactive');
+        }else{
+            loginBtn.classList.add('regactive');
+        }
+
+        function logout(){
+            window.location = './index.html'
+            localStorage.clear();
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
