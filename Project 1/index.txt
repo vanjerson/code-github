@@ -1,0 +1,190 @@
+Follow us on :
+
+<ion-icon name="logo-facebook"></ion-icon>
+<ion-icon name="logo-twitter"></ion-icon>
+<ion-icon name="logo-pinterest"></ion-icon>
+<ion-icon name="logo-linkedin"></ion-icon>
+
+GameHub
+
+Home
+Featured
+Shop
+News
+Sign Up
+
+aria-label = cart
+
+<ion-icon name="cart"></ion-icon>
+0
+
+aria-label = open search
+
+<ion-icon name="search-outline"></ion-icon>
+
+aria-label = toggle menu
+<ion-icon name="menu-outline" class="menu"></ion-icon>
+<ion-icon name="close-outline" class="close"></ion-icon>
+
+
+
+#---------- SEARCH BOX ----------#
+
+aria-label = search
+
+placeholder = Search here...
+
+aria-label = submit search
+<ion-icon name="search-outline"></ion-icon>
+
+aria-label = close search
+
+
+
+#---------- HERO ----------#
+
+PLAY & BROADCAST
+
+GameHub is the Destination for Playing, Discussing, and Broadcasting games.
+
+Download
+
+Read More
+
+alt = hero banner
+
+
+
+#---------- BRAND ----------#
+
+alt = brand logo
+
+
+
+#---------- LATEST GAME ----------#
+
+Latest Releases
+
+Recommended Games
+
+Zombie
+
+Adventure
+
+Action
+
+
+#---------- LIVE MATCH ----------#
+
+Watch Live Broadcast
+
+alt = Live Match Video
+
+aria-label = play video
+<ion-icon name="play"></ion-icon>
+
+Upcoming Live Matches
+
+
+#---------- FEATURED GAME ----------#
+
+Featured
+Games
+
+<ion-icon name="notifications"></ion-icon>
+
+PC, Playstation 5, Xbox
+
+
+#---------- SHOP ----------#
+
+IMPROVE YOUR GAMING EXPERIENCE
+
+Get Your Hardcore Gears
+
+<ion-icon name="basket"></ion-icon>
+
+
+#---------- BLOG ----------#
+
+Latest News &
+Articles
+
+The biggest video game news, rumors, previews, and info about the PC, PS5, Xbox, Switch, & mobile titles you play.
+
+<ion-icon name="person-outline"></ion-icon>
+Admin
+
+<ion-icon name="calendar-outline"></ion-icon>
+
+January 01, 2023
+
+January 02, 2023
+
+January 03, 2023
+
+Read More
+
+<ion-icon name="caret-forward"></ion-icon>
+
+
+#---------- NEWSLETTER ----------#
+
+Our
+Newsletter
+
+placeholder = Enter your email...
+
+<ion-icon name="mail-outline"></ion-icon>
+
+Subscribe
+<ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+
+
+
+#---------- FOOTER ----------#
+
+GameHub
+
+<ion-icon name="location"></ion-icon>
+Address : Philippines
+
+<ion-icon name="headset"></ion-icon>
+Phone : +1234-567-89
+
+<ion-icon name="mail-open"></ion-icon>
+Email : info@email.com
+
+Products
+
+Need Help?
+
+Terms & Conditions
+Privacy Policy
+Legal
+Cookies
+FAQ
+
+Follow Us
+
+<ion-icon name="logo-facebook"></ion-icon>
+<ion-icon name="logo-youtube"></ion-icon>
+<ion-icon name="logo-tiktok"></ion-icon>
+<ion-icon name="logo-twitch"></ion-icon>
+
+Newsletter Sign Up
+
+placeholder = Enter your email
+
+aria-label = submit
+<ion-icon name="rocket"></ion-icon>
+
+© 2023 GameHub. All Rights Reserved by Kodego WD30 - Group8
+
+
+
+#---------- BACK TO TOP ----------#
+
+aria-label = back to top
+
+<ion-icon name="caret-up"></ion-icon>
