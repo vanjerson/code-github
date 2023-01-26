@@ -24,6 +24,10 @@
     margin: auto;
     width: 100%;
 }
+
+
+
+
 section {
     padding: 4rem 0 3rem;
     color: black;
@@ -220,6 +224,217 @@ header {
 }
 
 #basket:is(:hover, :focus) { color: var(--marigold); }
+
+/* News Letter */
+  
+.newsletter { margin-block-end: 80px; }
+  
+.newsletter-card {
+  background-color: var(--raisin-black-3);
+  padding: 40px 15px;
+  margin-block-start: -55px;
+  border-radius: 80px;
+}
+
+.newsletter .h2 {
+  font-size: var(--fs-4);
+  text-transform: uppercase;
+  text-align: center;
+  margin-block-end: 30px;
+}
+
+.newsletter .input-wrapper {
+  max-width: 300px;
+  margin-inline: auto;
+  margin-block-end: 10px;
+}
+
+.newsletter .email-field {
+  font-size: var(--fs-9);
+  color: var(--white);
+  font-weight: var(--fw-500);
+  padding: 17px 45px;
+  padding-inline-end: 20px;
+  outline: none;
+}
+
+.newsletter .input-wrapper ion-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  color: var(--marigold);
+  --ionicon-stroke-width: 50px;
+}
+
+.newsletter .input-wrapper::before {
+  --bg: var(--raisin-black-4);
+  --skewX: -20deg;
+}
+
+.newsletter-btn {
+  font-size: var(--fs-9);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-inline: 20px;
+  transition: var(--transition);
+}
+
+.newsletter-btn::after { display: none; }
+
+.newsletter-btn::before {
+  --skewX: -20deg;
+  transition: var(--transition);
+}
+
+.newsletter-btn:is(:hover, :focus) { color: var(--marigold); }
+
+.newsletter-btn:is(:hover, :focus)::before { background-color: var(--white); }
+
+/* Footer */
+
+.footer { color: var(--roman-silver); }
+
+.footer-top { padding-block-end: var(--section-padding); }
+
+.footer-top .container {
+  display: grid;
+  gap: 50px;
+}
+
+.footer .logo { margin-block-end: 35px; }
+
+.footer-text,
+.footer .contact-item {
+  font-size: var(--fs-8);
+  font-weight: var(--fw-500);
+  line-height: 1.8;
+}
+
+.footer-text { margin-block-end: 15px; }
+
+.contact-item:not(:last-child) { margin-block-end: 10px; }
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.contact-icon {
+  margin-block-start: 3px;
+  font-size: 17px;
+}
+
+.footer-list-title {
+  position: relative;
+  color: var(--silver);
+  font-family: var(--ff-oxanium);
+  text-transform: uppercase;
+  font-weight: var(--fw-800);
+  padding-block-end: 20px;
+  margin-block-end: 35px;
+}
+
+.footer-list-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background-color: var(--marigold);
+}
+
+.footer-link {
+  font-size: var(--fs-9);
+  max-width: max-content;
+  transition: var(--transition);
+  padding-block: 8px;
+  font-weight: var(--fw-500);
+}
+
+.footer-link:is(:hover, :focus) {
+  color: var(--marigold);
+  transform: translateX(5px);
+}
+
+.footer .social-wrapper { margin-block-end: 50px; }
+
+.footer .social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer .social-link {
+  color: var(--white);
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.footer-newsletter { position: relative; }
+
+.footer-newsletter .email-field {
+  background-color: var(--raisin-black-4);
+  padding: 12px 20px;
+  padding-inline-end: 60px;
+  font-size: var(--fs-9);
+  color: var(--white);
+}
+
+.footer-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 53px;
+  background-color: var(--marigold);
+  color: var(--xiketic);
+  display: grid;
+  place-content: center;
+}
+
+.footer-bottom-img { display: none; }
+
+.footer-bottom {
+  background-color: black;
+  padding-block: 20px;
+  text-align: center;
+}
+
+.copyright {
+  font-size: var(--fs-9);
+  font-weight: var(--fw-500);
+  line-height: 1.8;
+}
+
+.copyright-link {
+  display: inline-block;
+  color: var(--marigold);
+}
+
+/* Back-to-top */
+
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  background-color: var(--marigold);
+  padding: 12px;
+  z-index: 4;
+  transition: var(--transition);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
+
+
 
 /* Breakpoints */
 @media (max-width: 1080px) {
