@@ -393,6 +393,7 @@
   
   .navbar-link:is(:hover, :focus) { background-color: var(--white_10); }
   
+  
   /* Search Box */
   
   .search-container {
