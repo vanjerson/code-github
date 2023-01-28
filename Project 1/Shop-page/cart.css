@@ -1,3 +1,4 @@
+
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -471,3 +472,62 @@ header {
         width: 280px;
     }
 }
+
+
+
+/* MODAL */
+
+.modal-checkout {
+    padding-bottom: 10px;
+    display: none;
+    position: fixed;
+    margin: auto;
+    max-width: 700px;
+    background-color: white;
+    z-index: 100;
+    border-radius: 3px;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, 0);
+    box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 14px 5px rgba(0,0,0,0.5);
+  }
+
+  .modal-checkout .modal-container {
+    width: 100%;
+    padding: 0 30px 10px;
+    text-align: center;
+  }
+
+  .modal-checkout h2 {
+    margin-top: 10px;
+  }
+
+  .modal-checkout .total-string {
+    pointer-events: none;
+  }
+
+  .modal-checkout button {
+    background-color: white;
+    border: none;
+  }
+
+  .modal-checkout p {
+    margin: 0 20px;
+    text-align: center;
+  }
+
+  .modal-checkout .total-string {
+    font-size: xx-large;
+  }
+
+  .modal-checkout .close-modal {
+    cursor: pointer;
+    text-align: right;
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+
+  }

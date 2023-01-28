@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +10,20 @@
     <link rel="stylesheet" href="cart.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <!-- Nav -->
         <div class="nav container">
-            <a href="#" class="logo"><img src="../logo/glogo.jpg" alt="img" style="width: 160px;"></a>
+            <a href="../index.html" class="logo"><img src="../logo/glogo.jpg" alt="img" style="width: 160px;"></a>
 
             <ion-icon name="cart" id="cart"></ion-icon>
             <!-- Cart -->
@@ -29,12 +31,12 @@
                 <h2 class="cart-title">Your Cart</h2>
                 <!-- Content -->
                 <div class="cart-content">
-                    
+
                 </div>
                 <!-- Total -->
                 <div class="total">
                     <div class="total-title">Total</div>
-                    <div class="total-price">$0</div>
+                    <span>$</span><output class="total-price" value="213">0</output>
                 </div>
                 <!-- Buy Button -->
                 <button type="button" class="btn-buy">Buy Now</button>
@@ -53,7 +55,8 @@
         <div class="shop-content">
             <!-- Box 1 -->
             <div class="item-box">
-                <img src="../API/Asus-ROG-Maximus-XII-Extreme-Wi-Fi-Motherboard-3-416x416.jpg" alt="image" class="item-img">
+                <img src="../API/Asus-ROG-Maximus-XII-Extreme-Wi-Fi-Motherboard-3-416x416.jpg" alt="image"
+                    class="item-img">
                 <h2 class="item-title">ROG Maximus</h2>
                 <span class="price">$30</span>
                 <ion-icon name="basket" id="basket" class="basket"></ion-icon>
@@ -81,7 +84,8 @@
             </div>
             <!-- Box 5 -->
             <div class="item-box">
-                <img src="../API/msi_x470_gaming_plus_motherboard_1523983592000_1402554-416x416.jpg" alt="image" class="item-img">
+                <img src="../API/msi_x470_gaming_plus_motherboard_1523983592000_1402554-416x416.jpg" alt="image"
+                    class="item-img">
                 <h2 class="item-title">MSI X470</h2>
                 <span class="price">$30</span>
                 <ion-icon name="basket" id="basket" class="basket"></ion-icon>
@@ -138,11 +142,56 @@
 
         </div>
     </section>
-    
+
+
+
+    <!-- MODAL -->
+
+
+    <section id="modalCheckout" class="modal-checkout">
+        <button id="closeModal" class="close-modal">&#xd7</button>
+        <div class="modal-container">
+            <h2>Complete your purchase</h2>
+            <br>
+
+            <p><strong>Your Total is</strong></p>
+            <span class="total-string">$ </span>
+            <button class="total-string" id="finalTotal" value=""></button>
+
+            <br>
+
+            <div id="paypal-button-container"></div>
+        </div>
+    </section>
+
+
+
+
+
 
 
     <script src="cart.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-------- PAYPAL API -------->
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AUSIR4oMYTJ_T-9IyIQHB_gNdcOVF5a7ye_3y1LvYIgtgL_VM8V2QiL8XSNvaz11AhLkV4DW9K3FbNf0"></script>
+
+    <script>
+        paypal.Buttons({
+            createOrder: function (data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: finalTotal.value
+                        }
+                    }]
+                });
+            }
+        }).render('#paypal-button-container')
+    </script>
+
 </body>
+
 </html>
