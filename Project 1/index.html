@@ -94,23 +94,25 @@
             </li>
 
             <li class="navbar-item">
-              <a href="#featured" class="navbar-link skewBg" data-nav-link>Featured</a>
+              <a href="#featured" class="navbar-link skewBg" data-nav-link>Games</a>
             </li>
 
-            <li class="navbar-item">
-              <a href="#recommended" id="cart" class="navbar-link skewBg" data-nav-link>Recommended</a>
-            </li>
+
 
             <li class="navbar-item">
-              <a href="#shop" id="cart" class="navbar-link skewBg" data-nav-link>Shop</a>
+              <a href="./Shop-page/cart.html" id="cart" class="navbar-link skewBg" data-nav-link>Shop</a>
             </li>
 
             <li class="navbar-item">
               <a href="#blog" class="navbar-link skewBg" data-nav-link>News</a>
             </li>
 
-            <li class="navbar-item">
-              <a href="sign-log/login.html" class="navbar-link skewBg" data-nav-link>Sign Up</a>
+            <li class="navbar-item" id="modal-btn" style="display: block;">
+              <a href="#" id="modal-btn-anchor" class="navbar-link skewBg" data-nav-link>Login</a>
+            </li>
+
+            <li class="navbar-item" id="logoutBtn" style="display: none;">
+              <a href="#" class="navbar-link skewBg" data-nav-link>Logout</a>
             </li>
 
 
@@ -119,11 +121,11 @@
 
         <div class="header-actions">
 
-          <button class="cart-btn" aria-label="cart">
+          <!-- <button class="cart-btn" aria-label="cart">
             <ion-icon name="cart"></ion-icon>
 
             <span class="cart-badge">0</span>
-          </button>
+          </button> -->
 
           <button class="search-btn" aria-label="open search" data-search-toggler>
             <ion-icon name="search-outline"></ion-icon>
@@ -168,6 +170,125 @@
 
 
   <main>
+
+
+
+    <!----------- popup login-------------->
+
+    <section class="modal-login">
+      <div class="login-box">
+        <button class="close closeLoginModal">&#215</button>
+        <h1>Login</h1>
+        <form id="login">
+
+          <label for="loginUsername">Username:</label>
+          <input type="text" name="loginUsername" id="loginUsername">
+          <div class="errordiv">
+            <small id="loginUsernameError"></small>
+          </div>
+
+
+
+          <label for="loginPassword">Password:</label>
+          <input type="password" name="loginPassword" id="loginPassword">
+          <div class="errordiv">
+            <small id="loginPasswordError"></small>
+          </div>
+
+          <br>
+
+          <button type="submit">Login</button>
+
+        </form>
+      </div>
+      <p class="par-2">Don't have an account? <a href="SignUp.html" class="signupLink">Sign up Here</a></p>
+    </section>
+
+
+
+
+    <!--------------- popup signup -------------->
+
+    <section class="modal-signup">
+      <div class="signup-box">
+        <button class="close closeSignupModal">&#215</button>
+        <h1>Create an account</h1>
+
+        <form id="register">
+
+          <label for="username"> Create Username:</label>
+          <input type="text" name="username" id="username">
+          <div class="errordiv">
+            <small id="usernameError"></small>
+          </div>
+
+
+          <label for="email">Email:</label>
+          <input type="text" name="email" id="email">
+          <div class="errordiv">
+            <small id="emailError"></small>
+          </div>
+
+          <label for="password">Create Password:</label>
+          <input type="password" name="password" id="password">
+          <div class="errordiv">
+            <small id="passwordError"></small>
+          </div>
+
+
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" name="confirmPassword" id="confirmPassword">
+          <div class="errordiv">
+            <small id="confirmPasswordError"></small>
+          </div>
+
+
+          <button type="submit" id="submitBtn">Sign Up</button>
+
+        </form>
+        <p>By clicking the Sign Up button, you agree to our <a class="terms-condition" href="#">Terms and Condition</a>
+          and <a class="terms-condition" href="#">Privacy Policy.</a></p>
+      </div>
+      <p class="par-2">Already have an account? <a href="login.html" class="loginLink">Log in here</a></p>
+    </section>
+
+
+
+
+    <!------------------ success sign up popup ------------------>
+
+    <section class="modal-success">
+      <div class="upper-half">
+        <img src="./sign-log/check-icon.png" alt="">
+        <p>SUCCESS</p>
+      </div>
+
+      <div class="lower-half">
+        <p>Congratulations, your account has been successfully created.</p>
+        <button id="closeSuccessBtn">Continue</button>
+      </div>
+
+    </section>
+
+
+    <!---------------- Logout Confirmation Pop-up ---------------->
+
+    <section id="logoutConfirm" class="modal-logoutConfirm">
+      <div>
+        <p>Are you sure you want to logout?</p>
+        <button class="cancel-logout">Cancel</button>
+        <button class="confirm-logout">Logout</button>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
     <article>
 
       <!-- 
